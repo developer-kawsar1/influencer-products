@@ -17,20 +17,23 @@ body {
   background: #ffffff;
   font-family: 'Lobster', cursive;
 font-family: 'Poppins', sans-serif;
-font-weight: 400;
+font-weight: 800; 
+width: 100%;
+min-height: 100vh; 
+position: relative;
 }
 .container {
   max-width: 1140px;
   margin: 0 auto;
   width: 90%;
 } 
-
-/* navbar desigh */ 
- header{
-   padding-top: 50px;
- }
-/* navbar desigh */
-
+header{
+  padding-top: 50px;
+}
+header h2{
+  font-size: 20px;
+  font-weight: 900;
+}
 /* ========================
     Hero section
 =========================== */
@@ -94,6 +97,8 @@ font-weight: 400;
   grid-row-gap: 30px;
   align-items: center;
   place-items: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 /* ========================
         Popular products section
@@ -242,6 +247,15 @@ footer .icons a {
   padding-top: 8px;
 }
 
+
+
+.anim{
+
+  animation-name: rotation ;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
 /* animations */
 
 @keyframes animate-left {
@@ -269,4 +283,11 @@ footer .icons a {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+
+@keyframes rotation {
+  0% { transform: rotate(2deg); }
+  /* 50% { transform: rotate(3deg); } */
+  100% { transform: rotate(-10deg); }
 }
