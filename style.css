@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200&display=swap');
+
+:root {
+  --main: #E02C6D;
+  --white: #ffffff;
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +15,21 @@
 }
 body {
   background: #ffffff;
+  font-family: 'Lobster', cursive;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
 }
 .container {
   max-width: 1140px;
   margin: 0 auto;
   width: 90%;
-}
+} 
+
+/* navbar desigh */ 
+ header{
+   padding-top: 50px;
+ }
+/* navbar desigh */
 
 /* ========================
     Hero section
@@ -48,13 +67,14 @@ body {
   padding: 20px;
 }
 .hero h1 {
-  font-size: 52px;
+  font-size: 52px; 
+  margin-bottom: 10px;
 }
 .hero .hero-btn {
-  background-color: indianred;
+  background-color: var(--main);
   display: inline-block;
   text-decoration: none;
-  padding: 7px 15px;
+  padding: 10px 15px;
   color: #fff;
   margin-top: 15px;
   border-radius: 25px;
@@ -137,9 +157,66 @@ body {
   display: inline-block;
   padding: 10px;
   text-decoration: none;
-  color: rgba(224, 44, 109, 0.87);
+  color: var(--main);
 }
 
+
+
+
+/* testimonial section */
+
+
+.testimonial{
+  min-height: 50vh;
+  background-color: #F6F8FC;
+  padding: 70px 0;
+
+}
+.testimonial .container{
+  text-align: center;
+} 
+.testimonial .container >h2{
+  color: var(--main);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+} 
+.testimonial .container h1{
+  font-size: 30px;
+  color: #444; 
+  margin-bottom: 30px;
+} 
+.testimonial .container> p{
+  color: gray;
+} 
+.review-row{
+  display: flex; 
+  justify-content: space-around;
+}
+.review{
+  border-radius: 10px; 
+  flex-basis: 30%;
+  background-color: #fff;
+  padding: 30px; 
+} 
+ .img-box{
+   background-color: #fff4f2;
+   padding: 20px;
+   border-radius: 2px;
+}
+.testimonial .review img{
+   width: 50px;
+} 
+.testimonial .review .author{
+  color: #787885;
+  margin: 10px 0;
+}
+.testimonial .review i{
+  color: #F4C436;
+} 
+.text{
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
 /* footer part */
 
 footer {
