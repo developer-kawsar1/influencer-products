@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 688px) {
   .row {
     flex-direction: column-reverse;
   }
@@ -23,15 +23,15 @@
 } 
 
 
-@media only screen and (min-width: 768px) {
- .collections{
-    grid-template-columns: 1fr 1fr;
-    
 
-}
-@media only screen and (min-width: 1025px) {
- .collections{
-    grid-template-columns: 1fr 1fr 1fr;
+
+
+/* tablet device  */
+
+@media only screen and (min-device-width : 688px) and (max-device-width : 961px) { 
+  
+  .collections{
+    grid-template-columns: 1fr  1fr;
     
 
 }
